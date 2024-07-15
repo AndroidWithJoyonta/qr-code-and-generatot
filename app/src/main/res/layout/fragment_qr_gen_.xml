@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".qr_gen_Fragment"
+    android:padding="@dimen/_10ssp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <EditText
+           android:id="@+id/editText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="@dimen/_10ssp"
+             android:textColorHint="@color/black"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/enter_text_to_generate_qr_code" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+           android:text="@string/generate_qr_code"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/sky"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+
+
+
+</LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/downloadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:backgroundTint="@color/sky"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:src="@drawable/downloadbtn"
+        tools:ignore="DuplicateIds"
+        android:focusable="true" />
+
+</RelativeLayout>
